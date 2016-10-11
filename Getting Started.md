@@ -306,3 +306,22 @@ _Good_
 ```python
 from math import pi, sqrt
 ```
+
+_Good_
+```python
+from math import pi as math_pi, sqrt
+```
+
+Don't import too many modules or functions in one line.
+
+_Bad_
+```python
+from math import pi, sqrt, sin, cos, pow, tan, ceil, factorial, exp
+```
+
+_Good_
+```python
+from math import (
+	pi, sqrt, sin, cos, pow, 
+	tan, ceil, factorial, exp
+)
