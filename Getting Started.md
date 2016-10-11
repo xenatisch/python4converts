@@ -287,3 +287,22 @@ _Good_
 ...     # To write a file. 
 ...     print(data, file=data_file)  
 ```
+
+### Imports
+
+It is generally not a good idea to import an entire library. This is because it increases the chance of clashes in your namespace, can make your application slower, and can occupy quite a lot of memory:
+
+_Bad_
+```python
+import math
+```
+
+_Bad_
+```python
+from math import *
+```
+
+_Good_
+```python
+from math import pi, sqrt
+```
