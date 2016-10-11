@@ -6,6 +6,7 @@ This document is updated on a regular basis.
 
 
 **Written by: Pouria Hadjibagheri**
+
 Contents of this document is released under [MIT licence](https://opensource.org/licenses/mit). You are free to copy, use, or otherwise redistribute it as you see fit; without the need for attribution.
 
 
@@ -94,7 +95,7 @@ _Good_
 
 If, and only if, you do not know the number of arguments or keyword arguments that the user will be passing, you should use `*args` and `**kwargs`; for instance:
 
-When calculating the sum of the all arguments passed.
+when calculating the sum of the all arguments passed:
 
 _Good_
 ```python
@@ -112,8 +113,9 @@ _Good_
 185
 ```
 
+or when making a call to parent classes:
+
 _Good_
-or when making a call to parent classes. 
 ```python
 >>> class MySpecialClass(MyOtherClass):
 ...     def __init__(self, *args, **kwargs)
@@ -129,7 +131,7 @@ or when making a call to parent classes.
 >>> do_something(3, 1, 2, 3, some_value=9)
 3 (1, 2, 3) 1 {'some_value': 9}
 
->>> do_something(3, 5, 7, weigt=5, some_value=9)
+>>> do_something(3, 5, 7, weight=5, some_value=9)
 3 (5, 7) 5 {'some_value': 9}
 
 >>> do_something(3, 1)
