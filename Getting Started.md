@@ -92,7 +92,7 @@ _Good_
 ...    pass
 ```
 
-If, and only if, you do not know the number of arguments or keyword arguments that the user will be passing; for instance:
+If, and only if, you do not know the number of arguments or keyword arguments that the user will be passing, you should use `*args` and `**kwargs`; for instance:
 
 When calculating the sum of the all arguments passed.
 
@@ -129,8 +129,8 @@ or when making a call to parent classes.
 >>> do_something(3, 1, 2, 3, some_value=9)
 3 (1, 2, 3) 1 {'some_value': 9}
 
->>> do_something(3, 5, 7, wigth=5, some_value=9)
-3 (5, 7) 1 {'wigth': 5, 'some_value': 9}
+>>> do_something(3, 5, 7, weigt=5, some_value=9)
+3 (5, 7) 5 {'some_value': 9}
 
 >>> do_something(3, 1)
 3 (1,) 1 {}
