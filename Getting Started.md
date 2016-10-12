@@ -247,7 +247,7 @@ It is not recommended to test variables as boolean to see whether they are fille
 
 ```python
 >>> x = 0
->>> if x: print(x)  # Prinst nothing.
+>>> if x: print(x)  # Prints nothing.
 ...     
 
 >>> if x is not None: print(x)
